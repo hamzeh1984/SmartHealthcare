@@ -1,0 +1,32 @@
+Summary - 10 fold cross-validation (seed=1): -W weka.classifiers.trees.RandomForest -fold-number -1 -total-folds 10 -seed 1 -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+(note: relative measures might be slightly pessimistic due to the mean/mode of the target being computed on all the data rather than on training folds):
+Number of predictions retained for computing AUC/AUPRC: 1879
+
+
+
+Correctly Classified Instances        3745               99.2316 %
+Incorrectly Classified Instances        29                0.7684 %
+Kappa statistic                          0.9466
+Mean absolute error                      0.021 
+Root mean squared error                  0.0775
+Relative absolute error                 28.7491 %
+Root relative squared error             40.5688 %
+Total Number of Instances             3774     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.948    0.003    0.953      0.948    0.951      0.948    1.000     0.992     compensated_hypothyroid
+                 0.998    0.058    0.995      0.998    0.996      0.953    1.000     1.000     negative
+                 0.926    0.001    0.967      0.926    0.946      0.945    1.000     1.000     primary_hypothyroid
+                 0.000    0.000    ?          0.000    ?          ?        ?         ?         secondary_hypothyroid
+Weighted Avg.    0.992    0.054    ?          0.992    ?          ?        ?         ?         
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  184   10    0    0 |    a = compensated_hypothyroid
+    5 3473    3    0 |    b = negative
+    4    3   88    0 |    c = primary_hypothyroid
+    0    4    0    0 |    d = secondary_hypothyroid
+

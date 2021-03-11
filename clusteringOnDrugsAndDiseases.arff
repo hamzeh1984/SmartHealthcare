@@ -1,0 +1,888 @@
+@relation 'drugs and diseases_clustered'
+
+@attribute Instance_number numeric
+@attribute Condition {'Acid Indigestion and Upset Stomach',Acne,'Actinic Keratoses','Acute Myocardial Infarction',Addison,Aging,'AIDS and HIV Infection','Alcohol Withdrawal','Allergies and Allergic Reactions',Alopecia,'Altitube Illness',Alzheimer,Amebiasis,Amenorrhea,'Amyotrophic Lateral Sclerosis (ALS)',Anemia,Angina,Anorexia,Anxiety,'Appetite Stimulant','Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Asthma,Athlete,'Attention Deficit Hyperactivity Disorder (ADHD)',Autism,'Bacterial Infections','Benign Prostate Hyperplasia (BPH)','Bipolar Disorder','Bites and Stings','Bladder Inflammation','Bladder Spasms',Bleeding,'Blood Circulation','Blood Clots','Bronchial Spasms',Bronchitis,Bulimia,Burns,Bursitis,Cancer,'Cancer Of The Skin','Canker Sores (Aphthous Ulcers)',Chickenpox,'Cholesterol, High','Chronic Obstructive Pulmonary Disease (COPD)',Cirrhosis,'Colds and Cough',Colic,Congestion,'Congestive Heart Failure','Conjunctivitis (Pink Eye)','Conjunctivitis, Seasonal Allergic',Constipation,'Contraception (Birth Control)','Convulsions (Epilepsy, Seizures)','Corneal Ulcers',Cushing,Cystitis,Dandruff,Dementia,Depression,Dermatitis,Dermatomyositis,Diabetes,Diarrhea,'Dietary Supplements','Digestive Spasms',Diverticulitis,Drowsiness,'Dry Eyes','Ear Allergies','Ear Infections (Otitis Media)','Ear Wax',Eczema,Emphysema,Endometriosis,'Erectile Dysfunction (Impotence)',Esophagitis,'Estrogen Deficiency','Eye Allergies','Eye Conditions',Fatigue,Fever,'Fibrocystic Breast Disease','Fluid Retention (Edema, Swelling)','Fungal Infections (Ringworm)',Gallstones,'Gastroesophageal Reflux','Genital Warts (Condyloma Acuminatum)',Giardiasis,'Gingivitis and Gum Disease',Glaucoma,Gonorrhea,Gout,'Hair Loss (Baldness)','Hay Fever','Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Heart Rhythm Disorders (Irregular Heartbeat)','Heartburn (Indigestion)',Hemorrhoids,Herpes,'Hives (Urticaria)',Huntington,Hypercalcemia,Hyperglycemia,'Hypertension (High Blood Pressure)',Hyperthyroidism,Hypertriglyceridemia,Hypoglycemia,Hypothyroidism,Incontinence,Infertility,Inflammation,'Inflammatory Bowel Disease (Colitis, Crohn\'s Disease)','Influenza (Flu)',Insomnia,'Intermittent Claudication','Irritable Bowel Syndrome',Itching,'Jet Lag','Jock Itch','Joint Pain','Kidney Stones',Labyrinthitis,'Leg Pain or Cramps',Leukemia,Lice,'Lupus (Skin and Systemic)','Lyme Disease',Malabsorption,Malaria,'Male Hormone Deficiency',Melanoma,Meniere,Menopause,'Menstrual Cramps (Dysmenorrhea)','Menstruation, Excessive (Menorrhagia)','Mental and Emotional Disturbances','Motion Sickness','Multiple Sclerosis','Muscle Cramp, Spasm, Strain','Myasthenia Gravis',Narcolepsy,'Narcotic Withdrawal','Nasal Allergy','Nausea and Vomiting','Neural Tube Defects (prevention)','Night Blindness',Obesity,'Obsessive Compulsive Disorder','Ocular Hypertension',Osteoporosis,'Overactive Bladder',Overdose,Paget,Pain,'Pain In Mouth','Panic Disorder',Parasites,Parkinson,Peyronie,Poisoning,'Potassium Deficiency','Premature Labor','Premenstrual Syndrome (PMS)','Pressure Sores',Psoriasis,Psychosis,'Psychotic Disorders','Rectal Fissures','Respiratory Syncytial Virus (RSV)',Rickets,Rosacea,Scabies,Schizophrenia,Scleroderma,Shingles,'Sickle Cell Disease',Sinusitis,'Skin Disorders (Rashes)','Skin Lines and Wrinkles','Sleep Apnea','Smoking Cessation','Sore Throat','Stroke Prevention',Sunburn,Tonsillitis,Tourette,Toxoplasmosis,'Transplantation, Organ (Antirejection)',Tremors,'Trigeminal Neuralgia',Tuberculosis,Ulcers,'Ulcerative Colitis','Urethra Spasms',Urethritis,'Urinary Frequency','Urinary Retention','Urinary Tract Infection','Urine Acidity',Uveitis,'Vaginal Infections or Irritation','Vaginal Yeast Infections',Vertigo,'Virus Infections Of The Eye','Vitamin Deficiency',Vitiligo,Warts,Wilson,Worms,'Zinc Deficiency'}
+@attribute CommonlyUsedDrugs {Antacids,'Bismuth Subsalicylate','Histamine H2 Receptor Antagonists',Hyoscyamine,'Proton Pump Inhibitors',Simethicone,'Sodium Bicarbonate','Anti-acne Cleansing (Topical)','Topical Antibiotics (Clindamycin, Erythromycin)','Oral Antibiotics(Tetracyclines, Metronidazole)','Azelaic Acid','Benzoyl Peroxide',Isotretinoin,Keratolytics,'Retinoids (Topical)',Fluorouracil,Masoprocol,'Antithrombotic Agents',Nitroglycerin,'Angiotensin Converting Enzyme (ACE) Inhibitors','Beta-Adrenergic Blockers','Angiotensin-Receptor Blockers',Thrombolytics,'Dehydroepiandrosterone (DHEA)','Fusion Inhibitors','Non-Nucleoside Reverse Transcriptase Inhibitors','Nucleoside Reverse Transcriptase Inhibitors','Nucleotide Reverse Transcriptase Inhibitors','Protease Inhibitors',Benzodiazepines,'Beta Adrenergic Blocking Agents',Carbamazepine,Disulfiram,Hydroxyzine,Lithium,Naltrexone,Thiamine,Phenobarbital,'Adrenocorticoids (Nasal Inhalation, Oral Inhalation, Systemic)',Antihistamines,'Antihistamines, Non-sedating','Antihistamines, Phenothiazine-Derivative',Azelastine,Cromolyn,'Decongestants (Ophthalmic)',Ephedrine,Dutasteride,Finasteride,Minoxidil,'Carbonic Anhydrase Inhibitors',Chloroquine,Iodoquinol,Metronidazole,Bromocriptine,Progestins,Riluzole,'Adrenocorticoids (Systemic)',Androgens,Cyclosporine,'Folic Acid','Iron Supplements',Leucovorin,'Vitamin B-12','Antiplatelet Agents','Calcium Channel Blockers',Ranolazine,Nitrates,'Calcium Carbonate','Calcium Gluconate','Potassium Chloride','Antidepressants, Tricyclic',Fluoxetine,'Antidepressants (Tricyclic, SSRIs, SNRIs)',Barbiturates,Buspirone,'Ergotamine, Beladonna and Phenobarbital',Haloperidol,Loxapine,Meprobamate,Phenothiazines,Thiothixene,Dronabinol,Megestrol,Acetaminophen,'Adrenocorticoids (Oral Inhalation, Systemic)',Anakinra,'COX-2 Inhibitors',NSAIDs,Aspirin,Azathioprine,'Bronchodilators, Adrenergic','Bronchodilators, Xanthine',Capsaicin,'Gold Compounds',Hydroxychloroquine,'Leukotriene Modifiers',Methotrexate,'Tumor Necrosis Factor Blockers',Ipratropium,Nedocromil,Theophylline,Amphetamines,Atomoxetine,Dexmethylphenidate,Methylphenidate,Pemoline,Guanfacine,Clonidine,'Acetohydroxamic Acid (AHA)','Antibiotics See List of Antibiotics','Alpha Adrenergic Receptor Blockers','Antipsychotics (Quetiapine, Olanzapine, Risperidone, Ziprasidone, Haloperidol)','Anticonvulsants (Carbamazepine, Divalproex, Valproate Acid)','Adrenocorticoids (Topical)','Anesthetics (Topical)','Dimethyl Sulfoxide',Clidinium,Propantheline,Oxybutynin,'Antifibrinolytic Agents','Vitamin K',Cyclandelate,'Intermittent Claudication Agents',Isoxsuprine,'Vitamin E','Anticoagulants (Oral)','Antiplatelets (Clopidogrel, Dipyridamole, Ticlopidine)',Anticholinergics,Dextromethorphan,Cephalosporins,Fluoroquinolones,Macrolides,Sulfonamides,Tetracyclines,'Selective Serotonin Reuptake Inhibitors (SSRIs)','Zinc Supplements','Silver Sulfadiazine','Neomycin/Polymyxin B/Bacitracin topical',Aminoglutethimide,'Antiandrogens, Nonsteroidal','Antifungals, Azoles',Busulfan,Capecitabine,Cholarmbucil,Cyclophosphamide,Estramustine,Estrogens,Etoposide,Flutamide,Hydroxyurea,Imatinib,Levamisole,Lomustine,Melphalan,Mercaptopurine,Mitotane,Paclitaxel,Procarbazine,Tamoxifen,Testolactone,Thioguanine,'Thyroid Hormones',Toremifene,'Mechlorethamine (Topical)',Amlexanox,Bioadherent,'Anesthetics (Mucosal-Local)',Corticosteroids,Acyclovir,Cholestyramine,Colestipol,Ezetimibe,Gemfibrozil,'HMG-CoA Reductase Inhibitors','Neomycin (Oral)',Niacin,Raloxifene,Tiotropium,Colchicine,'Thiamine (Vitamin B-1)',Guaifenesin,Phenylephrine,'Phenylephrine (Ophthalmic)',Pseudoephedrine,Oxymetazoline,Xylometazoline,'Angiotensin-Converting Enzyme (ACE) Inhibitors','Digitalis Preparations','Beta-Adrenergic Blocking Agents','Beta-Adrenergic Blocking Agents and Thiazide','Diuretics, Loop','Diuretics, Potassium-Sparing','Diuretics, Potassium-Sparing and Hydrochlorothiazide','Diuretics, Thiazide','Antibacterials (Ophthalmic)','Antivirals (Ophthalmic)','NSAIDs (Ophthalmic)','Antiallergic Agents (Ophthalmic)','Laxatives, Bulk-Forming (Psyllium)','Laxatives, Osmotic (Lactulose)','Laxatives, Softener/Lubricant','Laxatives, Stimulant (Senna, Bisacodyl, Cascara Sagrada)','Lubiprostone, Linaclotide',Tegaserod,'Contraceptives, Oral and Skin','Contraceptives, Vaginal','Contraceptives, Vaginal (Spermicides)','Anticonvulsants, Hydantoin','Anticonvulsants, Succinimide',Divalproex,Felbamate,Gabapentin,Lamotrigine,Levetiracetam,Oxcarbazepine,Primidone,Topiramate,'Valproic Acid',Zonisamide,Phenazopyridine,'Sulfonamides and Phenazopyridine',Nitrofurantoin,Fosfomycin,Penicillins,'Antifungals (Topical)',Antiseborrheics,'Coal Tar','Cholinesterase Inhibitors','Ergoloid Mesylates',Memantine,Antidepressants,'See List of Antidepressants',Maprotiline,Selegiline,Dapsone,'Aminobenzoate Potassium','Antidiabetic Agents','See List of Antidiabetic Agents',Attapulgite,'Charcoal Activated','Difenoxin and Atropine','Diphenoxylate and Atropine','Kaolin and Pectin','Kaolin, Pectin, Belladonna and Opium',Loperamide,Nitazoxanide,Paregoric,'Calcium Supplements','Vitamin A','Vitamin C','Vitamin D',Dicyclomine,'See Antibiotics for Diverticulitis',Caffeine,'Orphenadrine, Aspirin and Caffeine','Protectant (Ophthalmic)','Anti-Inflammatory Drugs, Steroidal (Otic)','Antibiotics for Otitis Media','Antibacterials (Otic)',Antipyrine,'Antipyrine and Benzocaine (Otic)','Antibacterials, Antifungals (Topical)','Doxepin (Topical)',Danazol,Nafarelin,Goserelin,Leuprolide,'Oral Contraceptives',Alprostadil,'Erectile Dysfunction Agents',Papaverine,Yohimbe,Metoclopramide,Estrogen,'Cycloplegic, Mydriatic (Ophthalmic)','Cyclopentolate (Ophthalmic)','Natamycin (Ophthalmic)','Barbiturates, Aspirin and Codeine','Chlorzoxazone and Acetaminophen','Narcotic Analgesics and Aspirin',Salicylates,'Angiotensin Converting Enzyme (ACE) Inhibitors and Hydrochlorothiazide','Clonidine and Chlorthalidone','Guanethidine and Hydrochlorothiazide','Hydralazine and Hydrochlorothiazide',Indapamide,'Methyldopa and Thiazide Diuretics','Reserpine, Hydralazine and Hydrochlorothiazide','Antifungals, Topical',Griseofulvin,Nystatin,Ursodiol,Sucralfate,Podofilox,Imiquimod,'Papillomavirus Vaccines','Furazolidone, Quinacrine, Metronidazole, Nitazoxanide, Tinidazole',Chlorhexidine,Erythromycins,'Antiglaucoma, Adrenergic Antagonists','Antiglaucoma, Anticholinesterases','Antiglaucoma, Beta Blockers','Antiglaucoma, Carbonic Anhydrase Inhibitors','Antiglaucoma, Cholinergic Agonists','Antiglaucoma, Prostaglandins','Macrolide Antibiotics',Allopurinol,Meloxicam,Probenecid,'Probenecid and Colchicine',Sulfinpyrazone,'Antharil (Topical)','Minoxidil (Topical)','Antihistamine, Phenothiazine-Derivative',Meclizine,Orphenadrine,'Acetaminophen, Fioricet',Butorphanol,Ergotamine,'Ergotamine, Belladonna and Phenobarbital','Isometheptene, Dichloralphenazone and Acetaminophen',Methysergide,'Monoamine Oxidase Inhibitors',Triptans,Amiodarone,Disopyramide,Dofetilide,'Flecainide Acetate',Mexiletine,Moricizine,Procainamide,Propafenone,Quinidine,Tocainide,'Anesthetics (Rectal)','Antivirals (Topical)','Antivirals for Herpes Virus',Colesevelam,Dextrothyroxine,Acarbose,Metformin,'See High Blood Pressure Medications List','Antithyroid Drugs',Fibrates,Glucagon,Miglitol,Tolterodine,Clomiphene,'Acetaminophen and Salicylates',Mesalamine,Olsalazine,'Antivirals for Influenza','Antivirals for Influenza, Neuraminidase Inhibitors',Ribavirin,'Belladonna Alkaloids and Barbiturates','Chloral Hydrate',Melatonin,'See Insomnia Medications List','Cellulose Sodium Phosphate',Citrates,Penicillamine,Tiopronin,'Antihistamines, Phenothiazine-Derivatives',Pentoxifylline,Quinine,Pediculicides,Quinacrine,Antimalarial,Atovaquone,Primaquine,Proguanil,'Sulfadoxine and Pyrimethamine','Contraceptives (Oral)','Contraceptives, Oral',Molindone,'Rauwolfia Alkaloids',Risperidone,Clotrimazole,Cyclizine,Diphenidol,Scopolamine,Baclofen,Tizanidine,Dantrolene,'Muscle Relaxants, Skeletal (Cyclobenzaprine, Carisoprodol, Orphenadrine, Tizanidine)','Aspirin and Caffeine',Antimyasthenics,Modafinil,'Buprenorphine and Naloxone','Adrenocorticoids (Nasal Inhalation)','Antihistamines Phenothiazine-Derivative',Nabilone,Trimethobenzamide,'Beta Carotene','Appetite Suppressants',Lorcaserin,Phentermine,Orlistat,Liraglutide,'Bupropion and Naltrexone','Beta Adrenergic Blocking Agents (Ophthalmic)',Dorzolamide,Alendronate,'Bone Formation Agents',Calcitonin,'Sodium Fluoride','Tolterodine, Oxybutynin, Trospium, Darifenacin, Solifenacin','TCA (Imipramine, Doxepin)',Mirabegron,Ipecac,'Adjuvant Analgesics',Anthelmintics,Pentamidine,'Potassium Supplements',Ritodrine,'Pyridoxine (Vitamin B-6)',Anthralin,'Biologics for Psoriasis',Calcipotriene,Psoralens,'Retinoids (Oral)',Aripiprazole,Clozapine,Olanzapine,Quetiapine,Ziprasidone,'Antibacterials (Topical)','Penicillins and Beta Lactamase Inhibitors',Trimethoprim,'Neomycin (Topical)','Botulinum Toxin (Type A)',Armodafinil,Varenicline,Bupropion,'Nicotine Transdermal Systems','Medicated Lozenges, Sprays, Gargles','Platelet Inhibitors',Pyrimethamine,'Atovaquone, Dapsone','Immunosuppressive Agents',Cycloserine,Ethionamide,Isoniazid,Rifamycins,Glycopyrrolate,Sulfasalazine,Bethanechol,'Acetohydroxamic Acid','Atropine, Hyoscyamine, Methenamine',Cinoxacin,Flavoxate,Loracarbef,Methenamine,'Anti-Inflammatory Drugs, Steroidal (Ophthalmic)',Clindamycin,'Antifungals (Vaginal)','Pantothenic Acid',Riboflavin,'Psoralens (Methoxsalen)',Tacrolimus}
+@attribute Cluster {cluster0,cluster1,cluster2,cluster3,cluster4,cluster5,cluster6,cluster7,cluster8,cluster9,cluster10,cluster11,cluster12,cluster13,cluster14,cluster15,cluster16,cluster17,cluster18,cluster19,cluster20,cluster21,cluster22,cluster23,cluster24,cluster25,cluster26,cluster27,cluster28,cluster29,cluster30,cluster31,cluster32,cluster33,cluster34,cluster35,cluster36,cluster37,cluster38,cluster39,cluster40,cluster41,cluster42,cluster43,cluster44,cluster45,cluster46,cluster47,cluster48,cluster49,cluster50,cluster51,cluster52,cluster53,cluster54,cluster55,cluster56,cluster57,cluster58,cluster59,cluster60,cluster61,cluster62,cluster63,cluster64,cluster65,cluster66,cluster67,cluster68,cluster69,cluster70,cluster71,cluster72,cluster73,cluster74,cluster75,cluster76,cluster77,cluster78,cluster79,cluster80,cluster81,cluster82,cluster83,cluster84,cluster85,cluster86,cluster87,cluster88,cluster89,cluster90,cluster91,cluster92,cluster93,cluster94,cluster95,cluster96,cluster97,cluster98,cluster99,cluster100,cluster101,cluster102,cluster103,cluster104,cluster105,cluster106,cluster107,cluster108,cluster109,cluster110,cluster111,cluster112,cluster113,cluster114,cluster115,cluster116,cluster117,cluster118,cluster119,cluster120,cluster121,cluster122,cluster123,cluster124,cluster125,cluster126,cluster127,cluster128,cluster129,cluster130,cluster131,cluster132,cluster133,cluster134,cluster135,cluster136,cluster137,cluster138,cluster139,cluster140,cluster141,cluster142,cluster143,cluster144,cluster145,cluster146,cluster147,cluster148,cluster149,cluster150,cluster151,cluster152,cluster153,cluster154,cluster155,cluster156,cluster157,cluster158,cluster159,cluster160,cluster161,cluster162,cluster163,cluster164,cluster165,cluster166,cluster167,cluster168,cluster169,cluster170,cluster171,cluster172,cluster173,cluster174,cluster175,cluster176,cluster177,cluster178,cluster179,cluster180,cluster181,cluster182,cluster183,cluster184,cluster185,cluster186,cluster187,cluster188,cluster189,cluster190,cluster191,cluster192,cluster193,cluster194,cluster195,cluster196,cluster197,cluster198,cluster199,cluster200,cluster201,cluster202,cluster203,cluster204,cluster205,cluster206,cluster207,cluster208,cluster209,cluster210,cluster211,cluster212,cluster213,cluster214,cluster215,cluster216,cluster217,cluster218,cluster219,cluster220,cluster221,cluster222,cluster223,cluster224,cluster225,cluster226,cluster227,cluster228,cluster229,cluster230,cluster231,cluster232,cluster233,cluster234,cluster235,cluster236,cluster237,cluster238,cluster239,cluster240,cluster241,cluster242,cluster243,cluster244,cluster245,cluster246,cluster247,cluster248,cluster249,cluster250,cluster251,cluster252,cluster253,cluster254,cluster255,cluster256,cluster257,cluster258,cluster259,cluster260,cluster261,cluster262,cluster263,cluster264,cluster265,cluster266,cluster267,cluster268,cluster269,cluster270,cluster271,cluster272,cluster273,cluster274,cluster275,cluster276,cluster277,cluster278,cluster279,cluster280,cluster281,cluster282,cluster283,cluster284,cluster285,cluster286,cluster287,cluster288,cluster289,cluster290,cluster291,cluster292,cluster293,cluster294,cluster295,cluster296,cluster297,cluster298,cluster299,cluster300,cluster301,cluster302,cluster303,cluster304,cluster305,cluster306,cluster307,cluster308,cluster309,cluster310,cluster311,cluster312,cluster313,cluster314,cluster315,cluster316,cluster317,cluster318,cluster319,cluster320,cluster321,cluster322,cluster323,cluster324,cluster325,cluster326,cluster327,cluster328,cluster329,cluster330,cluster331,cluster332,cluster333,cluster334,cluster335,cluster336,cluster337,cluster338,cluster339,cluster340,cluster341,cluster342,cluster343,cluster344,cluster345,cluster346,cluster347,cluster348,cluster349,cluster350,cluster351,cluster352,cluster353,cluster354,cluster355,cluster356,cluster357,cluster358,cluster359,cluster360,cluster361,cluster362,cluster363,cluster364,cluster365,cluster366,cluster367,cluster368,cluster369,cluster370,cluster371,cluster372,cluster373,cluster374,cluster375,cluster376,cluster377,cluster378,cluster379,cluster380,cluster381,cluster382,cluster383,cluster384,cluster385,cluster386,cluster387,cluster388,cluster389,cluster390,cluster391,cluster392,cluster393,cluster394,cluster395,cluster396,cluster397,cluster398,cluster399,cluster400,cluster401,cluster402,cluster403,cluster404,cluster405,cluster406,cluster407,cluster408,cluster409,cluster410,cluster411,cluster412,cluster413,cluster414,cluster415,cluster416,cluster417,cluster418,cluster419,cluster420,cluster421,cluster422,cluster423,cluster424,cluster425,cluster426,cluster427,cluster428,cluster429,cluster430,cluster431,cluster432,cluster433,cluster434,cluster435,cluster436,cluster437,cluster438,cluster439,cluster440,cluster441,cluster442,cluster443,cluster444,cluster445,cluster446,cluster447,cluster448,cluster449,cluster450,cluster451,cluster452,cluster453,cluster454,cluster455,cluster456,cluster457,cluster458,cluster459,cluster460,cluster461,cluster462,cluster463,cluster464,cluster465,cluster466,cluster467,cluster468,cluster469,cluster470,cluster471,cluster472,cluster473,cluster474,cluster475,cluster476,cluster477,cluster478,cluster479,cluster480,cluster481,cluster482,cluster483,cluster484,cluster485,cluster486,cluster487,cluster488,cluster489,cluster490,cluster491,cluster492,cluster493,cluster494,cluster495,cluster496,cluster497,cluster498,cluster499,cluster500,cluster501,cluster502,cluster503,cluster504,cluster505,cluster506,cluster507,cluster508,cluster509,cluster510,cluster511,cluster512,cluster513,cluster514,cluster515,cluster516,cluster517,cluster518,cluster519,cluster520,cluster521,cluster522,cluster523,cluster524,cluster525,cluster526,cluster527,cluster528,cluster529,cluster530,cluster531,cluster532,cluster533,cluster534,cluster535,cluster536,cluster537,cluster538,cluster539,cluster540,cluster541,cluster542,cluster543,cluster544,cluster545,cluster546,cluster547,cluster548,cluster549,cluster550,cluster551,cluster552,cluster553,cluster554,cluster555,cluster556,cluster557,cluster558,cluster559,cluster560,cluster561,cluster562,cluster563,cluster564,cluster565,cluster566,cluster567,cluster568,cluster569,cluster570,cluster571,cluster572,cluster573,cluster574,cluster575,cluster576,cluster577,cluster578,cluster579,cluster580,cluster581,cluster582,cluster583,cluster584,cluster585,cluster586,cluster587,cluster588,cluster589,cluster590,cluster591,cluster592,cluster593,cluster594,cluster595,cluster596,cluster597,cluster598,cluster599,cluster600,cluster601,cluster602,cluster603,cluster604,cluster605,cluster606,cluster607,cluster608,cluster609,cluster610,cluster611,cluster612,cluster613,cluster614,cluster615,cluster616,cluster617,cluster618,cluster619,cluster620,cluster621,cluster622,cluster623,cluster624,cluster625,cluster626,cluster627,cluster628,cluster629,cluster630,cluster631,cluster632,cluster633,cluster634,cluster635,cluster636,cluster637,cluster638,cluster639,cluster640,cluster641,cluster642,cluster643,cluster644,cluster645,cluster646,cluster647,cluster648,cluster649,cluster650,cluster651,cluster652,cluster653,cluster654,cluster655,cluster656,cluster657,cluster658,cluster659,cluster660,cluster661,cluster662,cluster663,cluster664,cluster665,cluster666,cluster667,cluster668,cluster669,cluster670,cluster671,cluster672,cluster673,cluster674,cluster675,cluster676,cluster677,cluster678,cluster679,cluster680,cluster681,cluster682,cluster683,cluster684,cluster685,cluster686,cluster687,cluster688,cluster689,cluster690,cluster691,cluster692,cluster693,cluster694,cluster695,cluster696,cluster697,cluster698,cluster699,cluster700,cluster701,cluster702,cluster703,cluster704,cluster705,cluster706,cluster707,cluster708,cluster709,cluster710,cluster711,cluster712,cluster713,cluster714,cluster715,cluster716,cluster717,cluster718,cluster719,cluster720,cluster721,cluster722,cluster723,cluster724,cluster725,cluster726,cluster727,cluster728,cluster729,cluster730,cluster731,cluster732,cluster733,cluster734,cluster735,cluster736,cluster737,cluster738,cluster739,cluster740,cluster741,cluster742,cluster743,cluster744,cluster745,cluster746,cluster747,cluster748,cluster749,cluster750,cluster751,cluster752,cluster753,cluster754,cluster755,cluster756,cluster757,cluster758,cluster759,cluster760,cluster761,cluster762,cluster763,cluster764,cluster765,cluster766,cluster767,cluster768,cluster769,cluster770,cluster771,cluster772,cluster773,cluster774,cluster775,cluster776,cluster777,cluster778,cluster779,cluster780,cluster781,cluster782,cluster783,cluster784,cluster785,cluster786,cluster787,cluster788,cluster789,cluster790,cluster791,cluster792,cluster793,cluster794,cluster795,cluster796,cluster797,cluster798,cluster799,cluster800,cluster801,cluster802,cluster803,cluster804,cluster805,cluster806,cluster807,cluster808,cluster809,cluster810,cluster811,cluster812,cluster813,cluster814,cluster815,cluster816,cluster817,cluster818,cluster819,cluster820,cluster821,cluster822,cluster823,cluster824,cluster825,cluster826,cluster827,cluster828,cluster829,cluster830,cluster831,cluster832,cluster833,cluster834,cluster835,cluster836,cluster837,cluster838,cluster839,cluster840,cluster841,cluster842,cluster843,cluster844,cluster845,cluster846,cluster847,cluster848,cluster849,cluster850,cluster851,cluster852,cluster853,cluster854,cluster855,cluster856,cluster857,cluster858,cluster859,cluster860,cluster861,cluster862,cluster863,cluster864,cluster865,cluster866,cluster867,cluster868,cluster869,cluster870,cluster871,cluster872,cluster873,cluster874,cluster875,cluster876,cluster877,cluster878,cluster879,cluster880,cluster881,cluster882,cluster883,cluster884,cluster885,cluster886,cluster887,cluster888,cluster889,cluster890,cluster891,cluster892,cluster893,cluster894,cluster895,cluster896,cluster897,cluster898,cluster899,cluster900,cluster901,cluster902,cluster903,cluster904,cluster905,cluster906,cluster907,cluster908,cluster909,cluster910,cluster911,cluster912,cluster913,cluster914,cluster915,cluster916,cluster917,cluster918,cluster919,cluster920,cluster921,cluster922,cluster923,cluster924,cluster925,cluster926,cluster927,cluster928,cluster929,cluster930,cluster931,cluster932,cluster933,cluster934,cluster935,cluster936,cluster937,cluster938,cluster939,cluster940,cluster941,cluster942,cluster943,cluster944,cluster945,cluster946,cluster947,cluster948,cluster949,cluster950,cluster951,cluster952,cluster953,cluster954,cluster955,cluster956,cluster957,cluster958,cluster959,cluster960,cluster961,cluster962,cluster963,cluster964,cluster965,cluster966,cluster967,cluster968,cluster969,cluster970,cluster971,cluster972,cluster973,cluster974,cluster975,cluster976,cluster977,cluster978,cluster979,cluster980,cluster981,cluster982,cluster983,cluster984,cluster985,cluster986,cluster987,cluster988,cluster989,cluster990,cluster991,cluster992,cluster993,cluster994,cluster995,cluster996,cluster997,cluster998,cluster999,cluster1000,cluster1001,cluster1002,cluster1003,cluster1004,cluster1005,cluster1006,cluster1007,cluster1008,cluster1009,cluster1010,cluster1011,cluster1012,cluster1013,cluster1014,cluster1015,cluster1016,cluster1017,cluster1018,cluster1019,cluster1020,cluster1021,cluster1022,cluster1023,cluster1024,cluster1025,cluster1026,cluster1027,cluster1028,cluster1029,cluster1030,cluster1031,cluster1032,cluster1033,cluster1034,cluster1035,cluster1036,cluster1037,cluster1038,cluster1039,cluster1040,cluster1041,cluster1042,cluster1043,cluster1044,cluster1045,cluster1046,cluster1047,cluster1048,cluster1049,cluster1050,cluster1051,cluster1052,cluster1053,cluster1054,cluster1055,cluster1056}
+
+@data
+0,'Acid Indigestion and Upset Stomach',Antacids,cluster579
+1,'Acid Indigestion and Upset Stomach','Bismuth Subsalicylate',cluster583
+2,'Acid Indigestion and Upset Stomach','Histamine H2 Receptor Antagonists',cluster580
+3,'Acid Indigestion and Upset Stomach',Hyoscyamine,cluster582
+4,'Acid Indigestion and Upset Stomach','Proton Pump Inhibitors',cluster581
+5,'Acid Indigestion and Upset Stomach',Simethicone,cluster584
+6,'Acid Indigestion and Upset Stomach','Sodium Bicarbonate',cluster578
+7,Acne,'Anti-acne Cleansing (Topical)',cluster170
+8,Acne,'Topical Antibiotics (Clindamycin, Erythromycin)',cluster164
+9,Acne,'Oral Antibiotics(Tetracyclines, Metronidazole)',cluster166
+10,Acne,'Azelaic Acid',cluster165
+11,Acne,'Benzoyl Peroxide',cluster169
+12,Acne,Isotretinoin,cluster163
+13,Acne,Keratolytics,cluster167
+14,Acne,'Retinoids (Topical)',cluster168
+15,'Actinic Keratoses',Fluorouracil,cluster381
+16,'Actinic Keratoses',Masoprocol,cluster375
+17,'Acute Myocardial Infarction','Antithrombotic Agents',cluster333
+18,'Acute Myocardial Infarction',Nitroglycerin,cluster335
+19,'Acute Myocardial Infarction','Angiotensin Converting Enzyme (ACE) Inhibitors',cluster337
+20,'Acute Myocardial Infarction','Beta-Adrenergic Blockers',cluster334
+21,'Acute Myocardial Infarction','Angiotensin-Receptor Blockers',cluster338
+22,'Acute Myocardial Infarction',Thrombolytics,cluster336
+23,Addison,?,cluster6
+24,Aging,'Dehydroepiandrosterone (DHEA)',cluster879
+25,'AIDS and HIV Infection','Fusion Inhibitors',cluster739
+26,'AIDS and HIV Infection','Non-Nucleoside Reverse Transcriptase Inhibitors',cluster738
+27,'AIDS and HIV Infection','Nucleoside Reverse Transcriptase Inhibitors',cluster737
+28,'AIDS and HIV Infection','Nucleotide Reverse Transcriptase Inhibitors',cluster735
+29,'AIDS and HIV Infection','Protease Inhibitors',cluster736
+30,'Alcohol Withdrawal',Benzodiazepines,cluster632
+31,'Alcohol Withdrawal','Beta Adrenergic Blocking Agents',cluster628
+32,'Alcohol Withdrawal',Carbamazepine,cluster629
+33,'Alcohol Withdrawal',Disulfiram,cluster624
+34,'Alcohol Withdrawal',Hydroxyzine,cluster625
+35,'Alcohol Withdrawal',Lithium,cluster627
+36,'Alcohol Withdrawal',Naltrexone,cluster626
+37,'Alcohol Withdrawal',Thiamine,cluster630
+38,'Alcohol Withdrawal',Phenobarbital,cluster631
+39,'Allergies and Allergic Reactions','Adrenocorticoids (Nasal Inhalation, Oral Inhalation, Systemic)',cluster235
+40,'Allergies and Allergic Reactions',Antihistamines,cluster232
+41,'Allergies and Allergic Reactions','Antihistamines, Non-sedating',cluster228
+42,'Allergies and Allergic Reactions','Antihistamines, Phenothiazine-Derivative',cluster230
+43,'Allergies and Allergic Reactions',Azelastine,cluster231
+44,'Allergies and Allergic Reactions',Cromolyn,cluster234
+45,'Allergies and Allergic Reactions','Decongestants (Ophthalmic)',cluster229
+46,'Allergies and Allergic Reactions',Ephedrine,cluster233
+47,'Allergies and Allergic Reactions',Hydroxyzine,cluster227
+48,Alopecia,Dutasteride,cluster695
+49,Alopecia,Finasteride,cluster694
+50,Alopecia,Minoxidil,cluster694
+51,'Altitube Illness','Carbonic Anhydrase Inhibitors',cluster613
+52,Alzheimer,?,cluster9
+53,Alzheimer,?,cluster9
+54,Amebiasis,Chloroquine,cluster916
+55,Amebiasis,Iodoquinol,cluster917
+56,Amebiasis,Metronidazole,cluster961
+57,Amenorrhea,Bromocriptine,cluster919
+58,Amenorrhea,Progestins,cluster442
+59,'Amyotrophic Lateral Sclerosis (ALS)',Riluzole,cluster928
+60,Anemia,'Adrenocorticoids (Systemic)',cluster12
+61,Anemia,Androgens,cluster968
+62,Anemia,Cyclosporine,cluster966
+63,Anemia,'Folic Acid',cluster969
+64,Anemia,'Iron Supplements',cluster971
+65,Anemia,Leucovorin,cluster970
+66,Anemia,'Vitamin B-12',cluster967
+67,Angina,'Antiplatelet Agents',cluster685
+68,Angina,'Beta Adrenergic Blocking Agents',cluster687
+69,Angina,'Calcium Channel Blockers',cluster683
+70,Angina,Ranolazine,cluster686
+71,Angina,Nitrates,cluster684
+72,Anorexia,'Calcium Carbonate',cluster800
+73,Anorexia,'Calcium Gluconate',cluster802
+74,Anorexia,'Potassium Chloride',cluster801
+75,Anorexia,'Antidepressants, Tricyclic',cluster798
+76,Anorexia,Progestins,cluster444
+77,Anorexia,Fluoxetine,cluster799
+78,Anxiety,'Antidepressants (Tricyclic, SSRIs, SNRIs)',cluster257
+79,Anxiety,Barbiturates,cluster258
+80,Anxiety,Benzodiazepines,cluster260
+81,Anxiety,'Beta Adrenergic Blocking Agents',cluster262
+82,Anxiety,Buspirone,cluster253
+83,Anxiety,'Ergotamine, Beladonna and Phenobarbital',cluster264
+84,Anxiety,Haloperidol,cluster263
+85,Anxiety,Hydroxyzine,cluster255
+86,Anxiety,Loxapine,cluster261
+87,Anxiety,Meprobamate,cluster259
+88,Anxiety,Phenothiazines,cluster256
+89,Anxiety,Thiothixene,cluster254
+90,'Appetite Stimulant',Antihistamines,cluster986
+91,'Appetite Stimulant',Dronabinol,cluster930
+92,'Appetite Stimulant',Megestrol,cluster715
+93,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Acetaminophen,cluster20
+94,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Adrenocorticoids (Oral Inhalation, Systemic)',cluster32
+95,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Anakinra,cluster36
+96,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Antihistamines, Non-sedating',cluster30
+97,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','COX-2 Inhibitors',cluster28
+98,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',NSAIDs,cluster34
+99,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Aspirin,cluster37
+100,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Azathioprine,cluster26
+101,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Bronchodilators, Adrenergic',cluster33
+102,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Bronchodilators, Xanthine',cluster22
+103,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Capsaicin,cluster35
+104,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Chloroquine,cluster29
+105,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Cyclosporine,cluster27
+106,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Gold Compounds',cluster21
+107,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Hydroxychloroquine,cluster23
+108,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Leukotriene Modifiers',cluster25
+109,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)',Methotrexate,cluster31
+110,'Arthritis (Osteoarthritis, Rheumatoid Arthritis)','Tumor Necrosis Factor Blockers',cluster24
+111,Asthma,'Adrenocorticoids (Nasal Inhalation, Oral Inhalation, Systemic)',cluster548
+112,Asthma,'Bronchodilators, Adrenergic',cluster546
+113,Asthma,'Bronchodilators, Xanthine',cluster546
+114,Asthma,Cromolyn,cluster547
+115,Asthma,Ephedrine,cluster553
+116,Asthma,Ipratropium,cluster551
+117,Asthma,'Leukotriene Modifiers',cluster549
+118,Asthma,Nedocromil,cluster552
+119,Asthma,Theophylline,cluster550
+120,Athlete,?,cluster9
+121,Athlete,?,cluster9
+122,'Attention Deficit Hyperactivity Disorder (ADHD)',Amphetamines,cluster214
+123,'Attention Deficit Hyperactivity Disorder (ADHD)',Atomoxetine,cluster217
+124,'Attention Deficit Hyperactivity Disorder (ADHD)',Dexmethylphenidate,cluster215
+125,'Attention Deficit Hyperactivity Disorder (ADHD)',Methylphenidate,cluster216
+126,'Attention Deficit Hyperactivity Disorder (ADHD)',Pemoline,cluster218
+127,'Attention Deficit Hyperactivity Disorder (ADHD)',Guanfacine,cluster212
+128,'Attention Deficit Hyperactivity Disorder (ADHD)',Clonidine,cluster213
+129,Autism,Haloperidol,cluster895
+130,'Bacterial Infections','Acetohydroxamic Acid (AHA)',cluster912
+131,'Bacterial Infections','Antibiotics See List of Antibiotics',cluster911
+132,'Benign Prostate Hyperplasia (BPH)','Alpha Adrenergic Receptor Blockers',cluster698
+133,'Benign Prostate Hyperplasia (BPH)',Dutasteride,cluster697
+134,'Benign Prostate Hyperplasia (BPH)',Finasteride,cluster700
+135,'Bipolar Disorder','Antipsychotics (Quetiapine, Olanzapine, Risperidone, Ziprasidone, Haloperidol)',cluster643
+136,'Bipolar Disorder','Anticonvulsants (Carbamazepine, Divalproex, Valproate Acid)',cluster644
+137,'Bipolar Disorder',Lithium,cluster645
+138,'Bites and Stings','Adrenocorticoids (Topical)',cluster242
+139,'Bites and Stings','Anesthetics (Topical)',cluster921
+140,'Bladder Inflammation','Dimethyl Sulfoxide',cluster833
+141,'Bladder Spasms',Clidinium,cluster433
+142,'Bladder Spasms',Propantheline,cluster432
+143,'Bladder Spasms',Oxybutynin,cluster427
+144,Bleeding,'Antifibrinolytic Agents',cluster867
+145,Bleeding,'Vitamin K',cluster866
+146,'Blood Circulation',Cyclandelate,cluster770
+147,'Blood Circulation','Intermittent Claudication Agents',cluster137
+148,'Blood Circulation',Isoxsuprine,cluster771
+149,'Blood Circulation','Vitamin E',cluster769
+150,'Blood Clots','Anticoagulants (Oral)',cluster635
+151,'Blood Clots','Antiplatelets (Clopidogrel, Dipyridamole, Ticlopidine)',cluster636
+152,'Blood Clots',Aspirin,cluster637
+153,'Bronchial Spasms',Anticholinergics,cluster835
+154,'Bronchial Spasms','Bronchodilators, Adrenergic',cluster497
+155,Bronchitis,'Bronchodilators, Xanthine',cluster407
+156,Bronchitis,Dextromethorphan,cluster413
+157,Bronchitis,Ipratropium,cluster412
+158,Bronchitis,Cephalosporins,cluster411
+159,Bronchitis,Fluoroquinolones,cluster409
+160,Bronchitis,Macrolides,cluster408
+161,Bronchitis,Sulfonamides,cluster414
+162,Bronchitis,Tetracyclines,cluster410
+163,Bulimia,'Antidepressants, Tricyclic',cluster474
+164,Bulimia,Lithium,cluster472
+165,Bulimia,'Selective Serotonin Reuptake Inhibitors (SSRIs)',cluster471
+166,Burns,'Anesthetics (Topical)',cluster814
+167,Burns,'Zinc Supplements',cluster815
+168,Burns,'Silver Sulfadiazine',cluster816
+169,Burns,'Neomycin/Polymyxin B/Bacitracin topical',cluster813
+170,Bursitis,'Adrenocorticoids (Systemic)',cluster13
+171,Bursitis,NSAIDs,cluster958
+172,Bursitis,Aspirin,cluster640
+173,Cancer,'Adrenocorticoids (Systemic)',cluster1028
+174,Cancer,Aminoglutethimide,cluster1036
+175,Cancer,Androgens,cluster1029
+176,Cancer,'Antiandrogens, Nonsteroidal',cluster1054
+177,Cancer,'Antifungals, Azoles',cluster1048
+178,Cancer,Busulfan,cluster1034
+179,Cancer,Capecitabine,cluster1046
+180,Cancer,Cholarmbucil,cluster1035
+181,Cancer,Cyclophosphamide,cluster1050
+182,Cancer,Estramustine,cluster1041
+183,Cancer,Estrogens,cluster1030
+184,Cancer,Etoposide,cluster1051
+185,Cancer,Flutamide,cluster1031
+186,Cancer,Hydroxyurea,cluster1033
+187,Cancer,Imatinib,cluster1044
+188,Cancer,Levamisole,cluster1043
+189,Cancer,Lomustine,cluster1055
+190,Cancer,Melphalan,cluster1056
+191,Cancer,Mercaptopurine,cluster1045
+192,Cancer,Methotrexate,cluster1037
+193,Cancer,Mitotane,cluster1047
+194,Cancer,Paclitaxel,cluster1032
+195,Cancer,Procarbazine,cluster1052
+196,Cancer,Progestins,cluster1049
+197,Cancer,Tamoxifen,cluster1040
+198,Cancer,Testolactone,cluster1053
+199,Cancer,Thioguanine,cluster1038
+200,Cancer,'Thyroid Hormones',cluster1039
+201,Cancer,Toremifene,cluster1042
+202,'Cancer Of The Skin',Fluorouracil,cluster382
+203,'Cancer Of The Skin',Masoprocol,cluster376
+204,'Cancer Of The Skin','Mechlorethamine (Topical)',cluster383
+205,'Canker Sores (Aphthous Ulcers)',Amlexanox,cluster811
+206,'Canker Sores (Aphthous Ulcers)',Bioadherent,cluster808
+207,'Canker Sores (Aphthous Ulcers)','Anesthetics (Mucosal-Local)',cluster810
+208,'Canker Sores (Aphthous Ulcers)',Corticosteroids,cluster809
+209,Chickenpox,Acyclovir,cluster783
+210,Chickenpox,Acetaminophen,cluster782
+211,Chickenpox,Antihistamines,cluster985
+212,'Cholesterol, High',Cholestyramine,cluster160
+213,'Cholesterol, High',Colestipol,cluster159
+214,'Cholesterol, High',Ezetimibe,cluster156
+215,'Cholesterol, High',Gemfibrozil,cluster154
+216,'Cholesterol, High','HMG-CoA Reductase Inhibitors',cluster157
+217,'Cholesterol, High','Neomycin (Oral)',cluster155
+218,'Cholesterol, High',Niacin,cluster133
+219,'Cholesterol, High',Raloxifene,cluster158
+220,'Chronic Obstructive Pulmonary Disease (COPD)','Adrenocorticoids (Systemic)',cluster8
+221,'Chronic Obstructive Pulmonary Disease (COPD)','Bronchodilators, Adrenergic',cluster495
+222,'Chronic Obstructive Pulmonary Disease (COPD)','Bronchodilators, Xanthine',cluster487
+223,'Chronic Obstructive Pulmonary Disease (COPD)',Ipratropium,cluster489
+224,'Chronic Obstructive Pulmonary Disease (COPD)',Tiotropium,cluster490
+225,Cirrhosis,Colchicine,cluster974
+226,Cirrhosis,Cyclosporine,cluster975
+227,Cirrhosis,'Thiamine (Vitamin B-1)',cluster976
+228,'Colds and Cough',Acetaminophen,cluster544
+229,'Colds and Cough',Anticholinergics,cluster543
+230,'Colds and Cough',Antihistamines,cluster987
+231,'Colds and Cough','Antihistamines, Non-sedating',cluster545
+232,'Colds and Cough',NSAIDs,cluster537
+233,'Colds and Cough',Aspirin,cluster533
+234,'Colds and Cough',Dextromethorphan,cluster539
+235,'Colds and Cough',Ephedrine,cluster535
+236,'Colds and Cough',Guaifenesin,cluster538
+237,'Colds and Cough',Phenylephrine,cluster542
+238,'Colds and Cough','Phenylephrine (Ophthalmic)',cluster540
+239,'Colds and Cough',Pseudoephedrine,cluster541
+240,Colic,Hyoscyamine,cluster858
+241,Colic,Simethicone,cluster857
+242,Congestion,'Bronchodilators, Adrenergic',cluster493
+243,Congestion,Ephedrine,cluster481
+244,Congestion,Oxymetazoline,cluster484
+245,Congestion,Phenylephrine,cluster480
+246,Congestion,Pseudoephedrine,cluster482
+247,Congestion,Xylometazoline,cluster483
+248,'Congestive Heart Failure','Angiotensin-Converting Enzyme (ACE) Inhibitors',cluster289
+249,'Congestive Heart Failure','Digitalis Preparations',cluster294
+250,'Congestive Heart Failure','Beta-Adrenergic Blocking Agents',cluster288
+251,'Congestive Heart Failure','Beta-Adrenergic Blocking Agents and Thiazide',cluster290
+252,'Congestive Heart Failure','Diuretics, Loop',cluster291
+253,'Congestive Heart Failure','Diuretics, Potassium-Sparing',cluster292
+254,'Congestive Heart Failure','Diuretics, Potassium-Sparing and Hydrochlorothiazide',cluster293
+255,'Congestive Heart Failure','Diuretics, Thiazide',cluster297
+256,'Congestive Heart Failure',Nitrates,cluster287
+257,'Conjunctivitis (Pink Eye)','Antibacterials (Ophthalmic)',cluster757
+258,'Conjunctivitis (Pink Eye)','Antivirals (Ophthalmic)',cluster756
+259,'Conjunctivitis, Seasonal Allergic','NSAIDs (Ophthalmic)',cluster898
+260,'Conjunctivitis, Seasonal Allergic','Antiallergic Agents (Ophthalmic)',cluster900
+261,Constipation,'Laxatives, Bulk-Forming (Psyllium)',cluster400
+262,Constipation,'Laxatives, Osmotic (Lactulose)',cluster397
+263,Constipation,'Laxatives, Softener/Lubricant',cluster402
+264,Constipation,'Laxatives, Stimulant (Senna, Bisacodyl, Cascara Sagrada)',cluster399
+265,Constipation,'Lubiprostone, Linaclotide',cluster401
+266,Constipation,Tegaserod,cluster398
+267,'Contraception (Birth Control)','Contraceptives, Oral and Skin',cluster371
+268,'Contraception (Birth Control)','Contraceptives, Vaginal',cluster372
+269,'Contraception (Birth Control)','Contraceptives, Vaginal (Spermicides)',cluster373
+270,'Convulsions (Epilepsy, Seizures)','Anticonvulsants, Hydantoin',cluster79
+271,'Convulsions (Epilepsy, Seizures)','Anticonvulsants, Succinimide',cluster82
+272,'Convulsions (Epilepsy, Seizures)',Barbiturates,cluster83
+273,'Convulsions (Epilepsy, Seizures)',Benzodiazepines,cluster78
+274,'Convulsions (Epilepsy, Seizures)',Carbamazepine,cluster80
+275,'Convulsions (Epilepsy, Seizures)',Divalproex,cluster74
+276,'Convulsions (Epilepsy, Seizures)',Felbamate,cluster73
+277,'Convulsions (Epilepsy, Seizures)',Gabapentin,cluster71
+278,'Convulsions (Epilepsy, Seizures)',Lamotrigine,cluster75
+279,'Convulsions (Epilepsy, Seizures)',Levetiracetam,cluster84
+280,'Convulsions (Epilepsy, Seizures)',Oxcarbazepine,cluster81
+281,'Convulsions (Epilepsy, Seizures)',Primidone,cluster72
+282,'Convulsions (Epilepsy, Seizures)',Topiramate,cluster70
+283,'Convulsions (Epilepsy, Seizures)','Valproic Acid',cluster77
+284,'Convulsions (Epilepsy, Seizures)',Zonisamide,cluster76
+285,'Corneal Ulcers','Antibacterials (Ophthalmic)',cluster758
+286,Cushing,?,cluster16
+287,Cushing,?,cluster16
+288,Cushing,?,cluster16
+289,Cushing,?,cluster16
+290,Cushing,?,cluster16
+291,Cushing,?,cluster16
+292,Cystitis,Phenazopyridine,cluster351
+293,Cystitis,'Sulfonamides and Phenazopyridine',cluster350
+294,Cystitis,Nitrofurantoin,cluster353
+295,Cystitis,Fosfomycin,cluster349
+296,Cystitis,Fluoroquinolones,cluster348
+297,Cystitis,Cephalosporins,cluster347
+298,Cystitis,Penicillins,cluster352
+299,Dandruff,'Antifungals (Topical)',cluster670
+300,Dandruff,Antiseborrheics,cluster668
+301,Dandruff,'Coal Tar',cluster669
+302,Dementia,Buspirone,cluster512
+303,Dementia,'Cholinesterase Inhibitors',cluster510
+304,Dementia,'Ergoloid Mesylates',cluster514
+305,Dementia,Memantine,cluster513
+306,Dementia,Haloperidol,cluster511
+307,Depression,Antidepressants,cluster248
+308,Depression,'See List of Antidepressants',cluster249
+309,Depression,'Ergoloid Mesylates',cluster250
+310,Depression,Loxapine,cluster251
+311,Depression,Maprotiline,cluster245
+312,Depression,Methylphenidate,cluster247
+313,Depression,Selegiline,cluster246
+314,Dermatitis,'Adrenocorticoids (Systemic)',cluster9
+315,Dermatitis,'Adrenocorticoids (Topical)',cluster240
+316,Dermatitis,'Anesthetics (Topical)',cluster709
+317,Dermatitis,Antiseborrheics,cluster708
+318,Dermatitis,'Coal Tar',cluster706
+319,Dermatitis,Colchicine,cluster707
+320,Dermatitis,Dapsone,cluster710
+321,Dermatitis,Keratolytics,cluster712
+322,Dermatomyositis,'Aminobenzoate Potassium',cluster909
+323,Diabetes,'Antidiabetic Agents',cluster748
+324,Diabetes,'See List of Antidiabetic Agents',cluster747
+325,Diarrhea,Attapulgite,cluster117
+326,Diarrhea,'Bismuth Subsalicylate',cluster118
+327,Diarrhea,'Charcoal Activated',cluster116
+328,Diarrhea,'Difenoxin and Atropine',cluster112
+329,Diarrhea,'Diphenoxylate and Atropine',cluster119
+330,Diarrhea,'Kaolin and Pectin',cluster114
+331,Diarrhea,'Kaolin, Pectin, Belladonna and Opium',cluster115
+332,Diarrhea,Loperamide,cluster120
+333,Diarrhea,Nitazoxanide,cluster121
+334,Diarrhea,Paregoric,cluster113
+335,'Dietary Supplements','Calcium Supplements',cluster126
+336,'Dietary Supplements','Iron Supplements',cluster123
+337,'Dietary Supplements',Niacin,cluster132
+338,'Dietary Supplements','Vitamin A',cluster130
+339,'Dietary Supplements','Vitamin B-12',cluster124
+340,'Dietary Supplements','Vitamin C',cluster129
+341,'Dietary Supplements','Vitamin D',cluster128
+342,'Dietary Supplements','Vitamin E',cluster127
+343,'Dietary Supplements','Vitamin K',cluster125
+344,'Digestive Spasms',Clidinium,cluster435
+345,'Digestive Spasms','Difenoxin and Atropine',cluster436
+346,'Digestive Spasms',Dicyclomine,cluster438
+347,'Digestive Spasms',Hyoscyamine,cluster437
+348,'Digestive Spasms',Propantheline,cluster434
+349,Diverticulitis,'See Antibiotics for Diverticulitis',cluster888
+350,Drowsiness,Caffeine,cluster760
+351,Drowsiness,'Orphenadrine, Aspirin and Caffeine',cluster762
+352,'Dry Eyes','Protectant (Ophthalmic)',cluster913
+353,'Ear Allergies','Anti-Inflammatory Drugs, Steroidal (Otic)',cluster840
+354,'Ear Infections (Otitis Media)','Antibiotics for Otitis Media',cluster344
+355,'Ear Infections (Otitis Media)','Antibacterials (Otic)',cluster340
+356,'Ear Infections (Otitis Media)','Anti-Inflammatory Drugs, Steroidal (Otic)',cluster342
+357,'Ear Infections (Otitis Media)',Antipyrine,cluster341
+358,'Ear Infections (Otitis Media)',Phenylephrine,cluster343
+359,'Ear Wax','Antipyrine and Benzocaine (Otic)',cluster834
+360,Eczema,'Adrenocorticoids (Topical)',cluster241
+361,Eczema,'Antibacterials, Antifungals (Topical)',cluster663
+362,Eczema,'Coal Tar',cluster665
+363,Eczema,'Doxepin (Topical)',cluster664
+364,Eczema,Keratolytics,cluster662
+365,Emphysema,'Adrenocorticoids (Systemic)',cluster8
+366,Emphysema,'Bronchodilators, Adrenergic',cluster494
+367,Emphysema,'Bronchodilators, Xanthine',cluster487
+368,Emphysema,Ipratropium,cluster486
+369,Emphysema,Tiotropium,cluster491
+370,Endometriosis,Danazol,cluster329
+371,Endometriosis,Nafarelin,cluster330
+372,Endometriosis,Goserelin,cluster327
+373,Endometriosis,Leuprolide,cluster328
+374,Endometriosis,'Oral Contraceptives',cluster331
+375,'Erectile Dysfunction (Impotence)',Alprostadil,cluster871
+376,'Erectile Dysfunction (Impotence)','Erectile Dysfunction Agents',cluster873
+377,'Erectile Dysfunction (Impotence)',Papaverine,cluster872
+378,'Erectile Dysfunction (Impotence)',Yohimbe,cluster870
+379,Esophagitis,'Histamine H2 Receptor Antagonists',cluster576
+380,Esophagitis,Metoclopramide,cluster863
+381,Esophagitis,'Proton Pump Inhibitors',cluster576
+382,'Estrogen Deficiency',Estrogen,cluster926
+383,'Eye Allergies','Antiallergic Agents (Ophthalmic)',cluster899
+384,'Eye Conditions','Antibacterials (Ophthalmic)',cluster207
+385,'Eye Conditions',Cromolyn,cluster205
+386,'Eye Conditions','Cycloplegic, Mydriatic (Ophthalmic)',cluster203
+387,'Eye Conditions','Cyclopentolate (Ophthalmic)',cluster206
+388,'Eye Conditions','Decongestants (Ophthalmic)',cluster204
+389,'Eye Conditions','Natamycin (Ophthalmic)',cluster208
+390,'Eye Conditions','Phenylephrine (Ophthalmic)',cluster209
+391,Fatigue,Caffeine,cluster761
+392,Fever,Acetaminophen,cluster417
+393,Fever,NSAIDs,cluster423
+394,Fever,Aspirin,cluster420
+395,Fever,'Barbiturates, Aspirin and Codeine',cluster419
+396,Fever,'Chlorzoxazone and Acetaminophen',cluster421
+397,Fever,'Narcotic Analgesics and Aspirin',cluster422
+398,Fever,Salicylates,cluster418
+399,'Fibrocystic Breast Disease',Danazol,cluster923
+400,?,'Vitamin E',cluster1029
+401,'Fluid Retention (Edema, Swelling)','Angiotensin Converting Enzyme (ACE) Inhibitors and Hydrochlorothiazide',cluster45
+402,'Fluid Retention (Edema, Swelling)','Carbonic Anhydrase Inhibitors',cluster43
+403,'Fluid Retention (Edema, Swelling)','Clonidine and Chlorthalidone',cluster48
+404,'Fluid Retention (Edema, Swelling)','Diuretics, Loop',cluster41
+405,'Fluid Retention (Edema, Swelling)','Diuretics, Potassium-Sparing',cluster40
+406,'Fluid Retention (Edema, Swelling)','Diuretics, Thiazide',cluster46
+407,'Fluid Retention (Edema, Swelling)','Guanethidine and Hydrochlorothiazide',cluster42
+408,'Fluid Retention (Edema, Swelling)','Hydralazine and Hydrochlorothiazide',cluster49
+409,'Fluid Retention (Edema, Swelling)',Indapamide,cluster44
+410,'Fluid Retention (Edema, Swelling)','Methyldopa and Thiazide Diuretics',cluster47
+411,'Fluid Retention (Edema, Swelling)','Reserpine, Hydralazine and Hydrochlorothiazide',cluster39
+412,'Fungal Infections (Ringworm)','Antifungals, Azoles',cluster934
+413,'Fungal Infections (Ringworm)','Antifungals, Topical',cluster935
+414,'Fungal Infections (Ringworm)',Griseofulvin,cluster937
+415,'Fungal Infections (Ringworm)',Nystatin,cluster936
+416,Gallstones,Ursodiol,cluster948
+417,'Gastroesophageal Reflux','Histamine H2 Receptor Antagonists',cluster885
+418,'Gastroesophageal Reflux','Proton Pump Inhibitors',cluster576
+419,'Gastroesophageal Reflux',Sucralfate,cluster887
+420,'Genital Warts (Condyloma Acuminatum)',Podofilox,cluster386
+421,'Genital Warts (Condyloma Acuminatum)',Imiquimod,cluster385
+422,'Genital Warts (Condyloma Acuminatum)','Papillomavirus Vaccines',cluster387
+423,Giardiasis,'Furazolidone, Quinacrine, Metronidazole, Nitazoxanide, Tinidazole',cluster844
+424,'Gingivitis and Gum Disease',Chlorhexidine,cluster652
+425,'Gingivitis and Gum Disease',Erythromycins,cluster524
+426,'Gingivitis and Gum Disease',Penicillins,cluster522
+427,'Gingivitis and Gum Disease',Tetracyclines,cluster653
+428,Glaucoma,'Antiglaucoma, Adrenergic Antagonists',cluster621
+429,Glaucoma,'Antiglaucoma, Anticholinesterases',cluster618
+430,Glaucoma,'Antiglaucoma, Beta Blockers',cluster620
+431,Glaucoma,'Antiglaucoma, Carbonic Anhydrase Inhibitors',cluster622
+432,Glaucoma,'Antiglaucoma, Cholinergic Agonists',cluster615
+433,Glaucoma,'Antiglaucoma, Prostaglandins',cluster617
+434,Glaucoma,'Carbonic Anhydrase Inhibitors',cluster619
+435,Gonorrhea,Cephalosporins,cluster517
+436,Gonorrhea,Erythromycins,cluster523
+437,Gonorrhea,Fluoroquinolones,cluster520
+438,Gonorrhea,'Macrolide Antibiotics',cluster518
+439,Gonorrhea,Penicillins,cluster521
+440,Gonorrhea,Tetracyclines,cluster519
+441,Gout,'Adrenocorticoids (Systemic)',cluster11
+442,Gout,Allopurinol,cluster453
+443,Gout,NSAIDs,cluster456
+444,Gout,Colchicine,cluster457
+445,Gout,Meloxicam,cluster454
+446,Gout,Probenecid,cluster455
+447,Gout,'Probenecid and Colchicine',cluster452
+448,Gout,Sulfinpyrazone,cluster451
+449,'Hair Loss (Baldness)','Antharil (Topical)',cluster779
+450,'Hair Loss (Baldness)',Finasteride,cluster701
+451,'Hair Loss (Baldness)','Minoxidil (Topical)',cluster780
+452,'Hay Fever','Antiallergic Agents (Ophthalmic)',cluster995
+453,'Hay Fever',Antihistamines,cluster989
+454,'Hay Fever','Antihistamines, Non-sedating',cluster996
+455,'Hay Fever','Antihistamine, Phenothiazine-Derivative',cluster994
+456,'Hay Fever',Ephedrine,cluster990
+457,'Hay Fever',Guaifenesin,cluster992
+458,'Hay Fever',Hydroxyzine,cluster993
+459,'Hay Fever',Meclizine,cluster991
+460,'Hay Fever',Orphenadrine,cluster998
+461,'Hay Fever','Phenylephrine (Ophthalmic)',cluster997
+462,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Acetaminophen, Fioricet',cluster1020
+463,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Antidepressants, Tricyclic',cluster1016
+464,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Antihistamines,cluster1018
+465,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',NSAIDs,cluster1019
+466,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Aspirin,cluster1007
+467,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Barbiturates, Aspirin and Codeine',cluster1024
+468,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Beta Adrenergic Blocking Agents',cluster1017
+469,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Buspirone,cluster1006
+470,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Butorphanol,cluster1011
+471,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Caffeine,cluster1013
+472,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Calcium Channel Blockers',cluster1005
+473,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Clonidine,cluster1008
+474,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Divalproex,cluster1022
+475,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Ergotamine,cluster1015
+476,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Ergotamine, Belladonna and Phenobarbital',cluster1021
+477,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Isometheptene, Dichloralphenazone and Acetaminophen',cluster1009
+478,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Lithium,cluster1012
+479,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Methysergide,cluster1014
+480,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)','Monoamine Oxidase Inhibitors',cluster1010
+481,'Headache (Cluster, Migraine, Sinus, Tension, Vascular)',Triptans,cluster1023
+482,'Heart Rhythm Disorders (Irregular Heartbeat)',Amiodarone,cluster321
+483,'Heart Rhythm Disorders (Irregular Heartbeat)','Beta-Adrenergic Blocking Agents',cluster316
+484,'Heart Rhythm Disorders (Irregular Heartbeat)','Calcium Channel Blockers',cluster322
+485,'Heart Rhythm Disorders (Irregular Heartbeat)','Digitalis Preparations',cluster324
+486,'Heart Rhythm Disorders (Irregular Heartbeat)',Disopyramide,cluster314
+487,'Heart Rhythm Disorders (Irregular Heartbeat)',Dofetilide,cluster313
+488,'Heart Rhythm Disorders (Irregular Heartbeat)','Flecainide Acetate',cluster317
+489,'Heart Rhythm Disorders (Irregular Heartbeat)',Mexiletine,cluster318
+490,'Heart Rhythm Disorders (Irregular Heartbeat)',Moricizine,cluster312
+491,'Heart Rhythm Disorders (Irregular Heartbeat)',Procainamide,cluster315
+492,'Heart Rhythm Disorders (Irregular Heartbeat)',Propafenone,cluster320
+493,'Heart Rhythm Disorders (Irregular Heartbeat)',Quinidine,cluster319
+494,'Heart Rhythm Disorders (Irregular Heartbeat)',Tocainide,cluster323
+495,'Heartburn (Indigestion)',Antacids,cluster575
+496,'Heartburn (Indigestion)','Histamine H2 Receptor Antagonists',cluster572
+497,'Heartburn (Indigestion)','Proton Pump Inhibitors',cluster571
+498,'Heartburn (Indigestion)','Sodium Bicarbonate',cluster574
+499,Hemorrhoids,'Adrenocorticoids (Topical)',cluster239
+500,Hemorrhoids,'Anesthetics (Rectal)',cluster940
+501,Herpes,'Antivirals (Topical)',cluster943
+502,Herpes,'Antivirals for Herpes Virus',cluster942
+503,'Hives (Urticaria)',Antihistamines,cluster984
+504,'Hives (Urticaria)','Antihistamines, Non-sedating',cluster752
+505,'Hives (Urticaria)','Antihistamines, Phenothiazine-Derivative',cluster755
+506,'Hives (Urticaria)',Hydroxyzine,cluster753
+507,Huntington,?,cluster11
+508,Hypercalcemia,Colesevelam,cluster691
+509,Hypercalcemia,Colestipol,cluster689
+510,Hypercalcemia,Dextrothyroxine,cluster692
+511,Hypercalcemia,'HMG-CoA Reductase Inhibitors',cluster690
+512,Hyperglycemia,Acarbose,cluster829
+513,Hyperglycemia,Metformin,cluster830
+514,'Hypertension (High Blood Pressure)','See High Blood Pressure Medications List',cluster842
+515,Hyperthyroidism,'Antithyroid Drugs',cluster906
+516,Hypertriglyceridemia,Fibrates,cluster363
+517,Hypertriglyceridemia,Gemfibrozil,cluster362
+518,Hypoglycemia,Glucagon,cluster389
+519,Hypoglycemia,Miglitol,cluster390
+520,Hypothyroidism,Dextrothyroxine,cluster847
+521,Hypothyroidism,'Thyroid Hormones',cluster846
+522,Incontinence,Tolterodine,cluster750
+523,Infertility,Bromocriptine,cluster393
+524,Infertility,Clomiphene,cluster392
+525,Infertility,Danazol,cluster394
+526,Infertility,Progestins,cluster395
+527,Inflammation,'Acetaminophen and Salicylates',cluster174
+528,Inflammation,NSAIDs,cluster177
+529,Inflammation,'COX-2 Inhibitors',cluster175
+530,Inflammation,Aspirin,cluster178
+531,Inflammation,Mesalamine,cluster179
+532,Inflammation,'Narcotic Analgesics and Aspirin',cluster176
+533,Inflammation,Salicylates,cluster173
+534,'Inflammatory Bowel Disease (Colitis, Crohn\'s Disease)','Adrenocorticoids (Systemic)',cluster5
+535,'Inflammatory Bowel Disease (Colitis, Crohn\'s Disease)',Cyclosporine,cluster367
+536,'Inflammatory Bowel Disease (Colitis, Crohn\'s Disease)',Mesalamine,cluster369
+537,'Inflammatory Bowel Disease (Colitis, Crohn\'s Disease)',Metronidazole,cluster367
+538,'Inflammatory Bowel Disease (Colitis, Crohn\'s Disease)',Olsalazine,cluster368
+539,'Influenza (Flu)','Antivirals for Influenza',cluster647
+540,'Influenza (Flu)','Antivirals for Influenza, Neuraminidase Inhibitors',cluster648
+541,'Influenza (Flu)',Ribavirin,cluster649
+542,Insomnia,'Belladonna Alkaloids and Barbiturates',cluster148
+543,Insomnia,'Chloral Hydrate',cluster149
+544,Insomnia,Melatonin,cluster150
+545,Insomnia,Meprobamate,cluster152
+546,Insomnia,'See Insomnia Medications List',cluster151
+547,'Intermittent Claudication','Intermittent Claudication Agents',cluster138
+548,'Irritable Bowel Syndrome',Tegaserod,cluster924
+549,Itching,'Adrenocorticoids (Topical)',cluster243
+550,Itching,'Doxepin (Topical)',cluster666
+551,'Jet Lag',Melatonin,cluster838
+552,'Jock Itch','Antifungals (Topical)',cluster894
+553,'Joint Pain',NSAIDs,cluster953
+554,'Joint Pain','COX-2 Inhibitors',cluster951
+555,'Joint Pain',Aspirin,cluster641
+556,'Joint Pain','Probenecid and Colchicine',cluster952
+557,'Kidney Stones',Allopurinol,cluster733
+558,'Kidney Stones','Cellulose Sodium Phosphate',cluster730
+559,'Kidney Stones',Citrates,cluster726
+560,'Kidney Stones','Diuretics, Thiazide',cluster726
+561,'Kidney Stones',Penicillamine,cluster731
+562,'Kidney Stones','Sodium Bicarbonate',cluster728
+563,'Kidney Stones',Tiopronin,cluster732
+564,Labyrinthitis,'Antihistamines, Phenothiazine-Derivatives',cluster826
+565,Labyrinthitis,Benzodiazepines,cluster826
+566,Labyrinthitis,Meclizine,cluster1000
+567,'Leg Pain or Cramps',Cyclandelate,cluster674
+568,'Leg Pain or Cramps','Intermittent Claudication Agents',cluster136
+569,'Leg Pain or Cramps',Orphenadrine,cluster673
+570,'Leg Pain or Cramps',Pentoxifylline,cluster672
+571,'Leg Pain or Cramps',Quinine,cluster675
+572,Leukemia,Imatinib,cluster773
+573,Leukemia,Thioguanine,cluster774
+574,Lice,Pediculicides,cluster360
+575,'Lupus (Skin and Systemic)',NSAIDs,cluster680
+576,'Lupus (Skin and Systemic)','COX-2 Inhibitors',cluster679
+577,'Lupus (Skin and Systemic)','Adrenocorticoids (Systemic)',cluster8
+578,'Lupus (Skin and Systemic)','Adrenocorticoids (Topical)',cluster237
+579,'Lupus (Skin and Systemic)',Hydroxychloroquine,cluster677
+580,'Lupus (Skin and Systemic)',Methotrexate,cluster678
+581,'Lupus (Skin and Systemic)',Quinacrine,cluster681
+582,'Lyme Disease',Cephalosporins,cluster532
+583,'Lyme Disease',Erythromycins,cluster530
+584,'Lyme Disease','Macrolide Antibiotics',cluster528
+585,'Lyme Disease',Penicillins,cluster529
+586,'Lyme Disease',Tetracyclines,cluster527
+587,Malabsorption,'Vitamin K',cluster868
+588,Malabsorption,Quinacrine,cluster882
+589,Malaria,Antimalarial,cluster194
+590,Malaria,Atovaquone,cluster198
+591,Malaria,Chloroquine,cluster191
+592,Malaria,Hydroxychloroquine,cluster199
+593,Malaria,Primaquine,cluster192
+594,Malaria,Proguanil,cluster195
+595,Malaria,Quinidine,cluster197
+596,Malaria,Quinine,cluster193
+597,Malaria,'Sulfadoxine and Pyrimethamine',cluster196
+598,'Male Hormone Deficiency',Androgens,cluster893
+599,Melanoma,Hydroxyurea,cluster805
+600,Melanoma,Levamisole,cluster806
+601,Melanoma,Melphalan,cluster804
+602,Meniere,?,cluster14
+603,Meniere,?,cluster14
+604,Meniere,?,cluster14
+605,Meniere,?,cluster14
+606,Menopause,Estrogens,cluster440
+607,Menopause,Progestins,cluster443
+608,'Menstrual Cramps (Dysmenorrhea)',NSAIDs,cluster957
+609,'Menstrual Cramps (Dysmenorrhea)','COX-2 Inhibitors',cluster955
+610,'Menstrual Cramps (Dysmenorrhea)','Contraceptives (Oral)',cluster956
+611,'Menstruation, Excessive (Menorrhagia)','Contraceptives, Oral',cluster657
+612,'Menstruation, Excessive (Menorrhagia)',Danazol,cluster656
+613,'Menstruation, Excessive (Menorrhagia)',Estrogens,cluster440
+614,'Menstruation, Excessive (Menorrhagia)',Progestins,cluster445
+615,'Mental and Emotional Disturbances',Loxapine,cluster597
+616,'Mental and Emotional Disturbances',Molindone,cluster598
+617,'Mental and Emotional Disturbances','Rauwolfia Alkaloids',cluster599
+618,'Mental and Emotional Disturbances',Risperidone,cluster596
+619,'Motion Sickness',Antihistamines,cluster983
+620,'Motion Sickness','Antihistamines, Non-sedating',cluster559
+621,'Motion Sickness','Antihistamines, Phenothiazine-Derivative',cluster560
+622,'Motion Sickness',Clotrimazole,cluster555
+623,'Motion Sickness',Cyclizine,cluster556
+624,'Motion Sickness',Diphenidol,cluster557
+625,'Motion Sickness',Meclizine,cluster1002
+626,'Motion Sickness',Scopolamine,cluster558
+627,'Multiple Sclerosis','Adrenocorticoids (Systemic)',cluster7
+628,'Multiple Sclerosis',Baclofen,cluster820
+629,'Multiple Sclerosis',Tizanidine,cluster819
+630,'Muscle Cramp, Spasm, Strain',Baclofen,cluster565
+631,'Muscle Cramp, Spasm, Strain','Chlorzoxazone and Acetaminophen',cluster564
+632,'Muscle Cramp, Spasm, Strain',Dantrolene,cluster566
+633,'Muscle Cramp, Spasm, Strain','Muscle Relaxants, Skeletal (Cyclobenzaprine, Carisoprodol, Orphenadrine, Tizanidine)',cluster562
+634,'Muscle Cramp, Spasm, Strain','Aspirin and Caffeine',cluster563
+635,'Muscle Cramp, Spasm, Strain',Quinine,cluster567
+636,'Myasthenia Gravis','Adrenocorticoids (Systemic)',cluster4
+637,'Myasthenia Gravis',Antimyasthenics,cluster861
+638,'Myasthenia Gravis',Azathioprine,cluster852
+639,'Myasthenia Gravis',Cyclosporine,cluster980
+640,Narcolepsy,Amphetamines,cluster506
+641,Narcolepsy,Methylphenidate,cluster507
+642,Narcolepsy,Modafinil,cluster508
+643,'Narcotic Withdrawal','Buprenorphine and Naloxone',cluster891
+644,'Nasal Allergy','Adrenocorticoids (Nasal Inhalation)',cluster880
+645,'Nausea and Vomiting','Antihistamines Phenothiazine-Derivative',cluster101
+646,'Nausea and Vomiting','Bismuth Subsalicylate',cluster102
+647,'Nausea and Vomiting',Diphenidol,cluster104
+648,'Nausea and Vomiting',Dronabinol,cluster106
+649,'Nausea and Vomiting',Hydroxyzine,cluster109
+650,'Nausea and Vomiting',Metoclopramide,cluster108
+651,'Nausea and Vomiting',Nabilone,cluster107
+652,'Nausea and Vomiting',Phenothiazines,cluster103
+653,'Nausea and Vomiting',Scopolamine,cluster105
+654,'Nausea and Vomiting',Trimethobenzamide,cluster110
+655,'Neural Tube Defects (prevention)','Folic Acid',cluster836
+656,'Night Blindness','Beta Carotene',cluster931
+657,Obesity,'Appetite Suppressants',cluster588
+658,Obesity,Lorcaserin,cluster589
+659,Obesity,Phentermine,cluster587
+660,Obesity,Orlistat,cluster592
+661,Obesity,Liraglutide,cluster590
+662,Obesity,'Bupropion and Naltrexone',cluster591
+663,'Obsessive Compulsive Disorder','Antidepressants, Tricyclic',cluster476
+664,'Obsessive Compulsive Disorder','Selective Serotonin Reuptake Inhibitors (SSRIs)',cluster469
+665,'Ocular Hypertension','Beta Adrenergic Blocking Agents (Ophthalmic)',cluster365
+666,'Ocular Hypertension',Dorzolamide,cluster366
+667,Osteoporosis,Alendronate,cluster266
+668,Osteoporosis,'Bone Formation Agents',cluster272
+669,Osteoporosis,Calcitonin,cluster273
+670,Osteoporosis,'Calcium Supplements',cluster267
+671,Osteoporosis,Estrogens,cluster270
+672,Osteoporosis,Raloxifene,cluster268
+673,Osteoporosis,'Sodium Fluoride',cluster269
+674,Osteoporosis,'Vitamin D',cluster271
+675,'Overactive Bladder','Tolterodine, Oxybutynin, Trospium, Darifenacin, Solifenacin',cluster142
+676,'Overactive Bladder','TCA (Imipramine, Doxepin)',cluster141
+677,'Overactive Bladder',Mirabegron,cluster140
+678,Overdose,Ipecac,cluster379
+679,Paget,?,cluster4
+680,Paget,?,cluster4
+681,Paget,?,cluster4
+682,Pain,'Adjuvant Analgesics',cluster901
+683,'Pain In Mouth','Anesthetics (Mucosal-Local)',cluster787
+684,'Panic Disorder','Antidepressants, Tricyclic',cluster822
+685,'Panic Disorder',Benzodiazepines,cluster823
+686,'Panic Disorder','Monoamine Oxidase Inhibitors',cluster824
+687,Parasites,Anthelmintics,cluster905
+688,Parasites,Pentamidine,cluster904
+689,Parkinson,?,cluster17
+690,Parkinson,?,cluster17
+691,Parkinson,?,cluster17
+692,Parkinson,?,cluster17
+693,Parkinson,?,cluster17
+694,Parkinson,?,cluster17
+695,Parkinson,?,cluster17
+696,Parkinson,?,cluster17
+697,Parkinson,?,cluster17
+698,Parkinson,?,cluster17
+699,Parkinson,?,cluster17
+700,Parkinson,?,cluster17
+701,Parkinson,?,cluster17
+702,Peyronie,?,cluster4
+703,Poisoning,'Charcoal Activated',cluster380
+704,Poisoning,Ipecac,cluster378
+705,'Potassium Deficiency','Potassium Supplements',cluster929
+706,'Premature Labor',Isoxsuprine,cluster766
+707,'Premature Labor',Ritodrine,cluster765
+708,'Premenstrual Syndrome (PMS)','Antidepressants, Tricyclic',cluster475
+709,'Premenstrual Syndrome (PMS)',NSAIDs,cluster460
+710,'Premenstrual Syndrome (PMS)',Buspirone,cluster462
+711,'Premenstrual Syndrome (PMS)','Calcium Supplements',cluster461
+712,'Premenstrual Syndrome (PMS)','Contraceptives, Oral and Skin',cluster463
+713,'Premenstrual Syndrome (PMS)',Danazol,cluster465
+714,'Premenstrual Syndrome (PMS)','Pyridoxine (Vitamin B-6)',cluster464
+715,'Premenstrual Syndrome (PMS)','Selective Serotonin Reuptake Inhibitors (SSRIs)',cluster468
+716,'Premenstrual Syndrome (PMS)','Vitamin E',cluster466
+717,'Pressure Sores','Benzoyl Peroxide',cluster876
+718,Psoriasis,'Adrenocorticoids (Topical)',cluster276
+719,Psoriasis,Anthralin,cluster277
+720,Psoriasis,'Biologics for Psoriasis',cluster279
+721,Psoriasis,Calcipotriene,cluster283
+722,Psoriasis,'Coal Tar',cluster284
+723,Psoriasis,Cyclosporine,cluster282
+724,Psoriasis,Keratolytics,cluster281
+725,Psoriasis,Methotrexate,cluster278
+726,Psoriasis,Psoralens,cluster275
+727,Psoriasis,'Retinoids (Oral)',cluster274
+728,Psoriasis,'Retinoids (Topical)',cluster280
+729,Psychosis,Thiothixene,cluster825
+730,'Psychotic Disorders',Aripiprazole,cluster89
+731,'Psychotic Disorders',Carbamazepine,cluster90
+732,'Psychotic Disorders',Clozapine,cluster96
+733,'Psychotic Disorders',Haloperidol,cluster99
+734,'Psychotic Disorders',Loxapine,cluster93
+735,'Psychotic Disorders',Molindone,cluster88
+736,'Psychotic Disorders',Olanzapine,cluster92
+737,'Psychotic Disorders',Phenothiazines,cluster94
+738,'Psychotic Disorders',Quetiapine,cluster97
+739,'Psychotic Disorders',Risperidone,cluster98
+740,'Psychotic Disorders',Thiothixene,cluster95
+741,'Psychotic Disorders',Ziprasidone,cluster91
+742,'Rectal Fissures','Anesthetics (Rectal)',cluster940
+743,'Respiratory Syncytial Virus (RSV)',Ribavirin,cluster902
+744,Rickets,'Vitamin D',cluster881
+745,Rosacea,'Antibacterials (Topical)',cluster790
+746,Rosacea,Metronidazole,cluster964
+747,Rosacea,'Azelaic Acid',cluster788
+748,Rosacea,Tetracyclines,cluster789
+749,Scabies,Pediculicides,cluster359
+750,Schizophrenia,Aripiprazole,cluster604
+751,Schizophrenia,Carbamazepine,cluster607
+752,Schizophrenia,Clozapine,cluster608
+753,Schizophrenia,Haloperidol,cluster609
+754,Schizophrenia,Molindone,cluster602
+755,Schizophrenia,Olanzapine,cluster605
+756,Schizophrenia,Phenothiazines,cluster610
+757,Schizophrenia,Quetiapine,cluster603
+758,Schizophrenia,Risperidone,cluster606
+759,Scleroderma,'Aminobenzoate Potassium',cluster908
+760,Shingles,'Antivirals (Topical)',cluster945
+761,Shingles,'Antivirals for Herpes Virus',cluster946
+762,Shingles,Capsaicin,cluster947
+763,'Sickle Cell Disease',Hydroxyurea,cluster892
+764,Sinusitis,Cephalosporins,cluster185
+765,Sinusitis,'Macrolide Antibiotics',cluster181
+766,Sinusitis,Penicillins,cluster188
+767,Sinusitis,'Penicillins and Beta Lactamase Inhibitors',cluster182
+768,Sinusitis,Sulfonamides,cluster183
+769,Sinusitis,Tetracyclines,cluster186
+770,Sinusitis,Trimethoprim,cluster187
+771,Sinusitis,Xylometazoline,cluster184
+772,'Skin Disorders (Rashes)','Antibacterials (Topical)',cluster223
+773,'Skin Disorders (Rashes)','Antibacterials, Antifungals (Topical)',cluster226
+774,'Skin Disorders (Rashes)','Anesthetics (Topical)',cluster225
+775,'Skin Disorders (Rashes)',Cyclophosphamide,cluster222
+776,'Skin Disorders (Rashes)',Isotretinoin,cluster220
+777,'Skin Disorders (Rashes)','Neomycin (Topical)',cluster221
+778,'Skin Disorders (Rashes)','Retinoids (Topical)',cluster224
+779,'Skin Lines and Wrinkles','Botulinum Toxin (Type A)',cluster938
+780,'Sleep Apnea','Antidepressants, Tricyclic',cluster500
+781,'Sleep Apnea',Modafinil,cluster504
+782,'Sleep Apnea',Armodafinil,cluster503
+783,'Sleep Apnea',Progestins,cluster501
+784,'Sleep Apnea',Theophylline,cluster502
+785,'Smoking Cessation',Varenicline,cluster777
+786,'Smoking Cessation',Bupropion,cluster776
+787,'Smoking Cessation',Clonidine,cluster775
+788,'Smoking Cessation','Nicotine Transdermal Systems',cluster775
+789,'Sore Throat','Anesthetics (Mucosal-Local)',cluster785
+790,'Sore Throat','Medicated Lozenges, Sprays, Gargles',cluster786
+791,'Stroke Prevention','Platelet Inhibitors',cluster897
+792,Sunburn,'Adrenocorticoids (Topical)',cluster238
+793,Sunburn,'Anesthetics (Topical)',cluster922
+794,Tonsillitis,Cephalosporins,cluster355
+795,Tonsillitis,'Macrolide Antibiotics',cluster356
+796,Tourette,?,cluster6
+797,Tourette,?,cluster6
+798,Toxoplasmosis,Pyrimethamine,cluster660
+799,Toxoplasmosis,Leucovorin,cluster661
+800,Toxoplasmosis,'Atovaquone, Dapsone',cluster659
+801,'Transplantation, Organ (Antirejection)',Azathioprine,cluster850
+802,'Transplantation, Organ (Antirejection)',Cyclosporine,cluster979
+803,'Transplantation, Organ (Antirejection)','Immunosuppressive Agents',cluster851
+804,Tremors,Benzodiazepines,cluster826
+805,Tremors,'Beta-Adrenergic Blocking Agents',cluster875
+806,'Trigeminal Neuralgia',Baclofen,cluster931
+807,'Trigeminal Neuralgia',Carbamazepine,cluster854
+808,'Trigeminal Neuralgia',Lamotrigine,cluster855
+809,Tuberculosis,Cycloserine,cluster742
+810,Tuberculosis,Ethionamide,cluster745
+811,Tuberculosis,Isoniazid,cluster743
+812,Tuberculosis,Rifamycins,cluster744
+813,Ulcers,Antacids,cluster301
+814,Ulcers,Anticholinergics,cluster305
+815,Ulcers,'Bismuth Subsalicylate',cluster299
+816,Ulcers,Glycopyrrolate,cluster304
+817,Ulcers,'Histamine H2 Receptor Antagonists',cluster302
+818,Ulcers,Metronidazole,cluster303
+819,Ulcers,'Proton Pump Inhibitors',cluster306
+820,Ulcers,'Sodium Bicarbonate',cluster300
+821,Ulcers,Sucralfate,cluster307
+822,Ulcers,Tetracyclines,cluster309
+823,'Ulcerative Colitis',Olsalazine,cluster367
+824,'Ulcerative Colitis',Sulfasalazine,cluster841
+825,'Urethra Spasms',Clidinium,cluster430
+826,'Urethra Spasms',Propantheline,cluster429
+827,Urethritis,Erythromycins,cluster525
+828,Urethritis,Fluoroquinolones,cluster522
+829,Urethritis,'Macrolide Antibiotics',cluster531
+830,Urethritis,Phenazopyridine,cluster796
+831,Urethritis,'Sulfonamides and Phenazopyridine',cluster793
+832,Urethritis,Tetracyclines,cluster522
+833,'Urinary Frequency',Oxybutynin,cluster749
+834,'Urinary Frequency',Tolterodine,cluster751
+835,'Urinary Retention',Antimyasthenics,cluster862
+836,'Urinary Retention',Bethanechol,cluster864
+837,'Urinary Tract Infection','Acetohydroxamic Acid',cluster63
+838,'Urinary Tract Infection','Atropine, Hyoscyamine, Methenamine',cluster59
+839,'Urinary Tract Infection',Cephalosporins,cluster54
+840,'Urinary Tract Infection',Cinoxacin,cluster62
+841,'Urinary Tract Infection',Cycloserine,cluster66
+842,'Urinary Tract Infection',Flavoxate,cluster53
+843,'Urinary Tract Infection',Fluoroquinolones,cluster64
+844,'Urinary Tract Infection',Loracarbef,cluster57
+845,'Urinary Tract Infection',Methenamine,cluster60
+846,'Urinary Tract Infection',Penicillins,cluster52
+847,'Urinary Tract Infection','Penicillins and Beta Lactamase Inhibitors',cluster58
+848,'Urinary Tract Infection',Phenazopyridine,cluster65
+849,'Urinary Tract Infection',Sulfonamides,cluster55
+850,'Urinary Tract Infection',Trimethoprim,cluster61
+851,'Urinary Tract Infection',Tetracyclines,cluster56
+852,'Urine Acidity',Citrates,cluster725
+853,'Urine Acidity','Vitamin C',cluster877
+854,Uveitis,'Anti-Inflammatory Drugs, Steroidal (Ophthalmic)',cluster878
+855,'Vaginal Infections or Irritation',Clindamycin,cluster448
+856,'Vaginal Infections or Irritation',Estrogens,cluster449
+857,'Vaginal Infections or Irritation',Metronidazole,cluster963
+858,'Vaginal Infections or Irritation',Progestins,cluster447
+859,'Vaginal Yeast Infections','Antifungals (Vaginal)',cluster837
+860,Vertigo,Meclizine,cluster839
+861,Vertigo,Niacin,cluster134
+862,'Virus Infections Of The Eye','Antivirals (Ophthalmic)',cluster848
+863,'Vitamin Deficiency','Pantothenic Acid',cluster718
+864,'Vitamin Deficiency',Riboflavin,cluster721
+865,'Vitamin Deficiency','Vitamin A',cluster720
+866,'Vitamin Deficiency','Vitamin B-12',cluster717
+867,'Vitamin Deficiency','Vitamin C',cluster716
+868,'Vitamin Deficiency','Vitamin D',cluster722
+869,'Vitamin Deficiency','Vitamin E',cluster716
+870,'Vitamin Deficiency','Vitamin K',cluster719
+871,Vitiligo,'Psoralens (Methoxsalen)',cluster145
+872,Vitiligo,Corticosteroids,cluster146
+873,Vitiligo,Tacrolimus,cluster144
+874,Warts,Keratolytics,cluster704
+875,Warts,'Retinoids (Topical)',cluster925
+876,Wilson,?,cluster4
+877,Wilson,?,cluster4
+878,Worms,Anthelmintics,cluster797
+879,'Zinc Deficiency','Zinc Supplements',cluster843

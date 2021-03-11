@@ -1,0 +1,32 @@
+Summary - 10 fold cross-validation (seed=1): -W weka.classifiers.bayes.NaiveBayes -fold-number -1 -total-folds 10 -seed 1 --
+(note: relative measures might be slightly pessimistic due to the mean/mode of the target being computed on all the data rather than on training folds):
+Number of predictions retained for computing AUC/AUPRC: 1879
+
+
+
+Correctly Classified Instances        3605               95.522  %
+Incorrectly Classified Instances       169                4.478  %
+Kappa statistic                          0.6293
+Mean absolute error                      0.0347
+Root mean squared error                  0.1343
+Relative absolute error                 47.453  %
+Root relative squared error             70.2962 %
+Total Number of Instances             3774     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.345    0.006    0.753      0.345    0.473      0.494    0.930     0.629     compensated_hypothyroid
+                 0.993    0.457    0.963      0.993    0.978      0.665    0.937     0.994     negative
+                 0.832    0.003    0.868      0.832    0.849      0.846    0.994     0.885     primary_hypothyroid
+                 0.750    0.000    0.750      0.750    0.750      0.750    ?         ?         secondary_hypothyroid
+Weighted Avg.    0.955    0.422    0.949      0.955    0.948      0.661    ?         ?         
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+   67  125    2    0 |    a = compensated_hypothyroid
+   14 3456   10    1 |    b = negative
+    8    8   79    0 |    c = primary_hypothyroid
+    0    1    0    3 |    d = secondary_hypothyroid
+

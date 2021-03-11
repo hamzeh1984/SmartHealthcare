@@ -1,0 +1,6 @@
+TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.948    0.003    0.953      0.948    0.951      0.948    1.000     0.992     compensated_hypothyroid
+                 0.998    0.058    0.995      0.998    0.996      0.953    1.000     1.000     negative
+                 0.926    0.001    0.967      0.926    0.946      0.945    1.000     1.000     primary_hypothyroid
+                 0.000    0.000    ?          0.000    ?          ?        ?         ?         secondary_hypothyroid
+Weighted Avg.    0.992    0.054    ?          0.992    ?          ?        ?         ?         
